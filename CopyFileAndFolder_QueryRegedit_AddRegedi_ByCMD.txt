@@ -1,0 +1,17 @@
+# Comandos via linha CMD
+
+# Copia Arquivo e Pastas e Subpastas
+# Exemplo abaixo:
+
+CMD=robocopy C:\Install\GroupPolicy_Export\GroupPolicy_Export C:\Windows\System32\GroupPolicy /E /ZB /COPYALL /R:0 /W:0 /V /NP /ETA /LOG:c:\Install\Teste_hoje.txt
+
+
+# Consultar chave no Registro do Windows se existe
+# Exemplo abaixo:
+
+Reg Query "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers
+
+# Adicionar Chave no Registro do Windows
+# Exemplo abaixo:
+
+regedit.exe /s PathSpoolerDeImpressao.reg
